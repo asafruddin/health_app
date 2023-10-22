@@ -15,6 +15,7 @@ class RegistrationScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(height: 50),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Text('Hi, Selamat Datang',

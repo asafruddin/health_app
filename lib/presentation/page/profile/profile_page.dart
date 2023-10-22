@@ -9,12 +9,14 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Column(
         children: [
           Container(
-            height: 114,
+            height: height / 6,
             decoration: const BoxDecoration(
                 color: MyTheme.primaryColor,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
@@ -84,6 +86,7 @@ class ProfilePage extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16)),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
                   padding:
